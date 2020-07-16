@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Руслан Амиров](https://up.htmlacademy.ru/adaptive/20/user/1376695).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Русяева](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
