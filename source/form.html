@@ -36,11 +36,98 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">SEDONA. Фото и видео</h1>
+    <div class="feedback">
+      <h3 class="feedback__title">Оставьте свой отзыв</h3>
+      <p class="feedback__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
     <section class="form">
-      <!-- Здесь будет форма
-            когда нибудь будет
-              обязательно
-                будет -->
+      <h2 class="visually-hidden">Форма</h2>
+      <form action="https://echo.htmlacademy.ru" method="get" class="main-form">
+
+      <fieldset class="main-form__introduce name-form">
+        <legend class="main-form__fieldset-legend">Представтесь:</legend>
+
+        <div class="name-form__firstName-block">
+          <label for="first-name" class="name-form__label">Имя*:</label>
+          <input class="name-form__input" id="first-name" type="text" name="first-name" placeholder="Петр">
+        </div>
+
+        <div class="name-form__secondName-block">
+          <label for="surname" class="name-form__label">Фамилия*:</label>
+          <input class="name-form__input" id="surname" type="text" name="surname" placeholder="Иванов">
+        </div>
+
+        <div class="name-form__middleName-block">
+          <label for="middle-name" class="name-form__label">Отчество:</label>
+          <input class="name-form__input" id="middle-name" type="text" name="middle-name" placeholder="Александрович">
+        </div>
+      </fieldset>
+
+      <fieldset class="main-form__contacts contacts-form">
+        <legend class="main-form__fieldset-legend">Контактная информация:</legend>
+
+        <div class="contacts-form__phone-block">
+          <label for="phone" class="name-form__label">Контактный телефон*:
+          </label>
+          <input class="name-form__input" id="phone" type="text" name="first-name" placeholder="Введите телефон">
+        </div>
+
+        <div class="contacts-form__email-block">
+          <label for="email" class="name-form__label">Электронная почта*:</label>
+          <input class="name-form__input" id="email" type="text" name="surname" placeholder="Введите e-mail">
+        </div>
+      </fieldset>
+
+      <fieldset class="main-form__impression impression-form">
+        <legend class="main-form__fieldset-legend">Ваше Общее впечатление:</legend>
+
+        <div class="impression-form__positive-block">
+          <input class="impression-form__input" id="positive" type="radio" name="impression" checked>
+          <label for="positive" class="impression-form__label">Скорее положительное</label>
+        </div>
+
+        <div class="impression-form__negative-block">
+          <input class="impression-form__input" id="negative" type="radio" name="impression">
+          <label for="negative" class="impression-form__label">Скорее отрицательное</label>
+        </div>
+
+        <div class="impression-form__positive-block">
+          <input class="impression-form__input" id="neutral" type="radio" name="impression">
+          <label for="neutral" class="impression-form__label">Затруднясь ответить</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="main-form__places place-form">
+        <legend class="main-form__fieldset-legend">Посещенные достопримечательности:</legend>
+
+        <div class="place-form__devil-bridge">
+          <input class="place-form__input" id="devil-bridge" type="checkbox" name="devil-bridge" checked>
+          <label for="devil-bridge" class="place-form__label">Мост Дьявола</label>
+        </div>
+
+        <div class="place-form__bell-mountain">
+          <input class="place-form__input" id="bell-mountain" type="checkbox" name="bell-mountain" checked>
+          <label for="bell-mountain" class="place-form__label">Гора-Колокол</label>
+        </div>
+
+        <div class="place-form__slide-park">
+          <input class="place-form__input" id="slide-park" type="checkbox" name="slide-park" checked>
+          <label for="slide-park" class="place-form__label">Слайд-парк</label>
+        </div>
+
+        <div class="place-form__red-rock">
+          <input class="place-form__input" id="red-rock" type="checkbox" name="red-rock">
+          <label for="red-rock" class="place-form__label">Красные скалы</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="main-form__emotions describe-emotion">
+        <legend class="main-form__fieldset-legend">Опишите свои эмоции:</legend>
+        <textarea name="describe-emotion" cols="30" rows="8" class="describe-emotion__text" placeholder="Опишите подробно все свои восторги "></textarea>
+      </fieldset>
+      <button class="main-form__submit-button">ОТПРАВИТЬ ОТЗЫВ</button>
+      </form>
+
     </section>
   </main>
 
