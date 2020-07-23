@@ -1,1 +1,59 @@
 // Начните писать стили здесь
+@import url("blocks/page-header.less");
+@import url("blocks/page-main.less");
+@import url("blocks/welcome.less");
+@import url("blocks/reasons.less");
+@import url("blocks/photo.less");
+@import url("blocks/presentation.less");
+@import url("blocks/hotel.less");
+@import url("blocks/map.less");
+@import url("blocks/form.less");
+@import url("blocks/feedback.less");
+@import url("blocks/page-footer.less");
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  max-width: 320px;
+
+  font-family: "PT Sans", "Aria", sans-serif;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  // временно
+  background-color: gray;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 140px;
+  padding: 10px;
+  font: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
