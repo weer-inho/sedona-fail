@@ -1,3 +1,19 @@
 .map {
   max-height: 350px;
 }
+
+.map__wrapper {
+  position: relative;
+}
+
+.map__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+  background-image: url("../../img/icons/icon-map-marker.svg");
+  background-repeat: no-repeat;
+}
