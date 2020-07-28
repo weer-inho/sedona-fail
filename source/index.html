@@ -2,41 +2,47 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body class="page__body">
 
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фото и видео</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Форма Отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <header class="page-header">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </div>
       <a href="#" class="page-header__logo">
-        <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип SEDONA">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logotype-mobile.svg">
+          <source media="(max-width: 1199px)" srcset="img/logotype-mobile.svg">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <img src="img/logotype-mobile.svg" alt="Логотип SEDONA">
+        </picture>
         <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </a>
-    </header>
+    </nav>
+  </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">SEDONA. Сайт туристического городка в штате Аризона</h1>
@@ -58,7 +64,7 @@
             <p class="reasons__description-text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reasons__photo">
-            <img src="img/reason1-city.jpg" width="520" height="262" alt="Настоящий городок №1">
+            <img class="reasons__photo-img" src="img/reason1-city.jpg" width="520" height="256" alt="Настоящий городок №1">
           </div>
           <ul class="reasons__list">
             <li class="reasons__list-item ">
@@ -87,27 +93,29 @@
           </div>
         </div>
 
-        <div class="reasons__lasts">
-          <div class="reasons__description">
-            <h3 class="reasons__title">Небольшая площадь</h3>
-            <p class="reasons__number">— №3 —</p>
-            <p class="reasons__description-text">Все интересные места находятся очень близко</p>
+        <div class="reasons__lasts-wrapper">
+          <div class="reasons__lasts">
+            <div class="reasons__description">
+              <h3 class="reasons__title">Небольшая площадь</h3>
+              <p class="reasons__number">— №3 —</p>
+              <p class="reasons__description-text">Все интересные места находятся очень близко</p>
+            </div>
           </div>
-        </div>
 
-        <div class="reasons__lasts">
-          <div class="reasons__description">
-            <h3 class="reasons__title">Красивая дорога</h3>
-            <p class="reasons__number">— №4 —</p>
-            <p class="reasons__description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <div class="reasons__lasts">
+            <div class="reasons__description">
+              <h3 class="reasons__title">Красивая дорога</h3>
+              <p class="reasons__number">— №4 —</p>
+              <p class="reasons__description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </div>
-        </div>
 
-        <div class="reasons__lasts">
-          <div class="reasons__description">
-            <h3 class="reasons__title">Мало туристов</h3>
-            <p class="reasons__number">— №5 —</p>
-            <p class="reasons__description-text">Большинство едет в Гранд-Каньон и толпится там</p>
+          <div class="reasons__lasts">
+            <div class="reasons__description">
+              <h3 class="reasons__title">Мало туристов</h3>
+              <p class="reasons__number">— №5 —</p>
+              <p class="reasons__description-text">Большинство едет в Гранд-Каньон и толпится там</p>
+            </div>
           </div>
         </div>
       </section>

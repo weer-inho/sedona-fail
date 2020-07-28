@@ -1,9 +1,18 @@
 .welcome {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    max-width: 1199px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 100%;
+  }
 }
 
 .welcome__title {
@@ -16,23 +25,58 @@
   padding: 0;
   max-width: 270px;
   text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-width: 520px;
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 520px;
+    font-size: 21px;
+  }
 }
 
 .welcome__text {
-  width: 320px;
+  width: 100%;
   height: 389px;
   text-align: center;
   overflow: hidden;
+  margin: auto;
 
   background-image: url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-width: 100%;
+    min-height: 518px;
+
+    background-image: url("../../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 100%;
+    min-height: 518px;
+
+    background-image: url("../../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .welcome__text-img {
   padding: 0;
   margin: 0;
   padding-top: 90px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding-top: 70px;
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .welcome__reasons {
@@ -46,4 +90,16 @@
   max-width: 285px;
   height: 55px;
   text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-width: 520px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 520px;
+    font-size: 14px;
+    font-weight: 400;
+  }
 }

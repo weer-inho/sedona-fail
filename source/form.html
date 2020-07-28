@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>SEDONA ФОРМА</title>
 </head>
@@ -28,13 +29,18 @@
           </li>
         </ul>
       </div>
+      <a href="#" class="page-header__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logotype-mobile.svg">
+          <source media="(max-width: 1199px)" srcset="img/logotype-mobile.svg">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <img src="img/logotype-mobile.svg" alt="Логотип SEDONA">
+        </picture>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </a>
     </nav>
-    <a href="#" class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип SEDONA">
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </a>
   </header>
 
   <main class="page-main">

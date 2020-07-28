@@ -11,10 +11,15 @@
 @import url("blocks/feedback.less");
 @import url("blocks/page-footer.less");
 
+// Viewports
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
+
 .page__body {
-  margin: 0;
+  max-width: 1200px;
+  margin: auto;
   padding: 0;
-  max-width: 320px;
 
   font-family: "PT Sans", "Aria", sans-serif;
 
@@ -24,7 +29,12 @@
   text-transform: uppercase;
 
   // временно
-  background-color: gray;
+  background-color: #ffffff;
+  box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+}
+
+.page__main {
+  width: 100%;
 }
 
 ul {
@@ -56,4 +66,9 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

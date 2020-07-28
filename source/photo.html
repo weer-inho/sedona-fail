@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>SEDONA ФОТО</title>
 </head>
@@ -28,13 +29,18 @@
           </li>
         </ul>
       </div>
+      <a href="#" class="page-header__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/logotype-mobile.svg">
+          <source media="(max-width: 1199px)" srcset="img/logotype-mobile.svg">
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <img src="img/logotype-mobile.svg" alt="Логотип SEDONA">
+        </picture>
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </a>
     </nav>
-    <a href="#" class="page-header__logo">
-      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип SEDONA">
-      <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </a>
   </header>
 
   <main class="page-main">
@@ -49,31 +55,68 @@
       <p class="photo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       <ul class="photo-list">
         <li class="photo-list__item photo__card">
-          <h3 class="photo-card__title">Народные просторы</h3>
-          <img class="photo-card__img" src="img/photo-1-mobile.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="photo-card__author">Автор фото: Борис</p>
-          <span class="photo-card__likes">1350</span>
+          <picture class="photo-card__img">
+            <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg">
+            <source media="(max-width: 1199px)" srcset="img/photo-sunset-tablet@1x.jpg">
+            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+            <img src="img/photo-sunset-mobile@1x.jpg" alt="Народные просторы">
+          </picture>
+          <div class="photo-card__container">
+            <div class="photo-card__wrapper">
+              <h3 class="photo-card__title">Народные просторы</h3>
+              <p class="photo-card__author">Автор фото: Борис</p>
+            </div>
+            <span class="photo-card__likes">1350</span>
+          </div>
+
         </li>
 
         <li class="photo-list__item photo__card">
-          <h3 class="photo-card__title">Местная растительность</h3>
-          <img class="photo-card__img" src="img/photo-2-mobile.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="photo-card__author">Автор фото: Сергей</p>
-          <span class="photo-card__likes">143</span>
+          <picture class="photo-card__img">
+            <source media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.jpg">
+            <source media="(max-width: 1199px)" srcset="img/photo-cactus-tablet@1x.jpg">
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+            <img src="img/photo-cactus-mobile@1x.jpg" alt="Народные просторы">
+          </picture>
+          <div class="photo-card__container">
+            <div class="photo-card__wrapper">
+              <h3 class="photo-card__title">Местная растительность</h3>
+              <p class="photo-card__author">Автор фото: Сергей</p>
+            </div>
+            <span class="photo-card__likes">143</span>
+          </div>
         </li>
 
         <li class="photo-list__item photo__card">
-          <h3 class="photo-card__title">Дорога на север</h3>
-          <img class="photo-card__img" src="img/photo-3-mobile.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="photo-card__author">Автор фото: Петр</p>
-          <span class="photo-card__likes">96</span>
+          <picture class="photo-card__img">
+            <source media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg">
+            <source media="(max-width: 1199px)" srcset="img/photo-roads-tablet@1x.jpg">
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+            <img src="img/photo-roads-mobile@1x.jpg" alt="Народные просторы">
+          </picture>
+          <div class="photo-card__container">
+            <div class="photo-card__wrapper">
+              <h3 class="photo-card__title">Дорога на север</h3>
+              <p class="photo-card__author">Автор фото: Петр</p>
+            </div>
+            <span class="photo-card__likes">96</span>
+          </div>
         </li>
 
         <li class="photo-list__item photo__card">
-          <h3 class="photo-card__title">Мост дьявола</h3>
-          <img class="photo-card__img" src="img/photo-4-mobile.jpg" width="280" height="280" alt="Народные просторы">
-          <p class="photo-card__author">Автор фото: Антон</p>
-          <span class="photo-card__likes">254</span>
+          <picture class="photo-card__img">
+            <source media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg">
+            <source media="(max-width: 1199px)" srcset="img/photo-bridge-tablet@1x.jpg">
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+            <img src="img/photo-bridge-mobile@1x.jpg" alt="Народные просторы">
+          </picture>
+          <div class="photo-card__container">
+            <div class="photo-card__wrapper">
+              <h3 class="photo-card__title">Мост дьявола</h3>
+              <p class="photo-card__author">Автор фото: Антон</p>
+            </div>
+            <span class="photo-card__likes">254</span>
+          </div>
         </li>
       </ul>
     </section>

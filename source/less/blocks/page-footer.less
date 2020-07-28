@@ -1,10 +1,24 @@
 .page-footer {
-  width: 320px;
+  width: 100%;
   height: 233px;
   padding-top: 30px;
   text-align: center;
 
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: flex;
+    max-height: 120px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    max-height: 120px;
+    padding: 30px;
+    box-sizing: border-box;
+  }
 }
 
 .social-list {
@@ -13,6 +27,14 @@
   margin: 0 auto;
   padding: 0;
   max-width: 151px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-width: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 150px;
+  }
 }
 
 .social-list__link {
@@ -28,6 +50,18 @@
 
 .footer__author {
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
+}
+
+.footer__svg {
+  margin-top: 10px;
 }
 
 .footer__author-title {
