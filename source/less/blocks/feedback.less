@@ -9,8 +9,26 @@
 .feedback__title {
   font-size: 18px;
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .feedback__description {
   font-weight: 400;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    max-width: 485px;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 485px;
+    margin: auto;
+  }
 }
