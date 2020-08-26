@@ -3,42 +3,49 @@
 }
 
 .photo__title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   text-align: center;
   line-height: 26px;
 
-  margin: 0;
-  padding-top: 20px;
+  margin: 10px 0;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 27px;
+    margin: 43px 0 15px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: 27px;
+    margin: 82px auto 5px;
   }
 }
 
 .photo__description {
   font-weight: 400;
   text-align: center;
+  font-size: 12px;
   line-height: 24px;
 
   max-width: 300px;
-  padding: 27px 0;
   margin: 0 auto;
+  padding: 18px 20px 32px;
 
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-width: 460px;
+    max-width: 480px;
+    margin-bottom: 43px;
+    font-size: 14px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 480px;
+    max-width: 425px;
+    min-height: 100px;
+    font-size: 12px;
+    margin: 0 auto 26px;
+    padding: 26px 0 0;
   }
 }
 
@@ -66,19 +73,21 @@
 .photo__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 22px 20px 21px;
 
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     border: none;
     align-items: flex-start;
+    padding: 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
     border: none;
     max-height: 267px;
     align-items: flex-start;
+    padding: 0 0 0;
   }
 }
 
@@ -88,15 +97,19 @@
   }
 }
 
-.photo__card .photo-card__img:first-child {
+.photo-card__img {
+  margin: auto;
+}
+
+.photo__card:first-child .photo-card__img {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-height: 265px;
+    max-height: 400px;
   }
 }
 
-.photo__card .photo-card__img:not(:first-child) {
+.photo__card:not(:first-child) .photo-card__img {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-height: 235px;
+    max-height: 268px;
   }
 }
 
@@ -106,7 +119,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     box-sizing: border-box;
     background-color: #f2f2f2;
   }
@@ -115,11 +128,23 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: -95px;
-    padding: 20px;
+    margin-top: -88px;
+    padding: 17px 20px 0;
     box-sizing: border-box;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.photo-card__wrapper {
+  margin: 0 0 8px 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 0 0 8px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 16px 0;
   }
 }
 
@@ -137,17 +162,18 @@
 }
 
 .photo-card__title {
-  margin-bottom: 0;
   order: 1;
+  font-size: 12px;
   line-height: 24px;
+  margin: 4px 0 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    font-size: 14px;
-    margin: 0;
+    font-size: 12px;
+    margin: -5px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
   }
 }
@@ -163,6 +189,7 @@
   font-weight: 400;
   text-transform: none;
   color: #333333;
+  margin: 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     margin: 0;
@@ -171,6 +198,7 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     color: #ffffff;
+    font-size: 13px;
   }
 }
 
@@ -178,8 +206,18 @@
   padding-left: 40px;
   background-image: url("../../img/icons/icon-like.svg");
   background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
+  height: 21px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 10px 0 0 40px;
+    background-position: 7px 8px;
+  }
 
   @media (min-width: @desktop-width) {
     background-image: url("../../img/icons/white-like-icon.svg");
+    background-position: 1px 11px;
+    padding: 10px 0 0 40px;
   }
 }

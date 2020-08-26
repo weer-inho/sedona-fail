@@ -3,14 +3,22 @@
   min-height: 287px;
   box-sizing: border-box;
   text-align: center;
-  padding: 20px;
+  padding: 5px 20px 20px;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 32px 20px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 36px 20px 20px;
+  }
 }
 
 .hotel__title {
   font-size: 21px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin: 24px 0 30px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 30px;
@@ -18,6 +26,7 @@
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
+    margin: 22px auto 35px;
   }
 }
 
@@ -27,13 +36,14 @@
   margin-bottom: 27px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-width: 430px;
+    max-width: 398px;
+    line-height: 26px;
     margin: auto;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 430px;
-    margin: auto;
+    max-width: 397px;
+    margin: 0 auto 7px;
   }
 }
 
