@@ -81,44 +81,44 @@
     min-width: 752px;
     min-height: 56px;
     background-color: #ffffff;
+    margin-top: -2px;
   }
 
   @media (min-width: @desktop-width) {
+    font-size: 13px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     min-width: 757px;
     min-height: 56px;
     background-color: #ffffff;
   }
 }
 
-.site-list__item:nth-child(2) {
+.site-list__item {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    margin-left: 18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: -20px;
+    min-width: 153px;
   }
 }
 
-.site-list__item:nth-child(3) {
+.site-list__item:first-child {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    margin-left: 170px;
+    margin-left: 6px;
+  }
+}
+
+.site-list__item:nth-child(2) {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin-right: 158px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 233px;
+    margin-right: 244px;
   }
 }
 
 .site-list__item:nth-child(4) {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    margin: 0 6px 0 0;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0 6px 0 0;
+    min-width: 145px;
   }
 }
 
@@ -130,8 +130,8 @@
   padding: 18px 0;
 
   text-align: center;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: bold;
   color: #ffffff;
 
   border-top: 2px solid #9ac2db;
@@ -142,7 +142,8 @@
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 142px;
     height: 56px;
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
     border: none;
 
     background-color: #ffffff;
@@ -152,7 +153,9 @@
   @media (min-width: @desktop-width) {
     width: 239px;
     height: 56px;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 16px 0;
     border: none;
 
     background-color: #ffffff;
