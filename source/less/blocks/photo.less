@@ -79,6 +79,8 @@
   flex-direction: column;
   padding: 22px 20px 21px;
   border-bottom: 1px solid #e5e5e5;
+  min-height: 415px;
+  padding: 20px;
 
   @media (max-width: @mobile-width-only) {
     height: 371px;
@@ -92,6 +94,7 @@
 
   @media (min-width: @desktop-width) {
     border: none;
+    padding: 0;
     max-height: 267px;
     align-items: flex-start;
     padding: 0 0 0;
@@ -252,5 +255,9 @@
     background-image: url("../../img/icons/white-like-icon.svg");
     background-position: 8px 11px;
     padding: 12px 0 0 40px;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding-bottom: 0;
   }
 }
