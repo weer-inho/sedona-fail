@@ -125,11 +125,16 @@
       <section class="presentation">
         <h2 class="presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <img class="presentation__img" src="img/video-mobile.jpg" alt="Видеопрезентация">
-        <div class="presentation__block">
-        </div>
+        <picture class="presentation__img">
+          <source media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg">
+          <source media="(max-width: 1199px)" srcset="img/video-tablet@1x.jpg">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg">
+          <img  src="img/video-mobile@1x.jpg" alt="Видеопрезентация">
+        </picture>
 
         <div class="presentation__button-block">
+          <div class="presentation__block">
+          </div>
           <button class="presentation__replay-button" type="button">
             <span class="visually-hidden reply-button--title">Повторить</span>
             <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">

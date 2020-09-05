@@ -1,5 +1,14 @@
 .map {
   width: 100%;
+  text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 4px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 0 0;
+  }
 }
 
 .map__wrapper {
@@ -10,11 +19,22 @@
 .map__wrapper::before {
   content: "";
   position: absolute;
-  top: 44%;
+  top: -177px;
   left: 46%;
   display: inline-block;
   height: 27px;
   width: 27px;
   background-image: url("../../img/icons/icon-map-marker.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    top: -172px;
+    left: 48%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -173px;
+    left: 48.8%;
+  }
 }
+
