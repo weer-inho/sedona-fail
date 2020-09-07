@@ -441,6 +441,12 @@
   }
 }
 
+.reasons__lasts .reasons__number {
+  @media (max-width: @mobile-width-only) {
+    margin: 12px 0 16px;
+  }
+}
+
 .reasons__lasts:first-child .reasons__description {
   @media (max-width: @mobile-width-only) {
     padding: 15px 30px 5px;
@@ -494,7 +500,7 @@
 .reasons__lasts .reasons__description {
   background-color: #eeeeee;
   color: #000000;
-  padding: 15px 30px 5px;
+  padding: 15px 30px 8px;
   box-sizing: border-box;
   height: auto;
 
@@ -504,8 +510,8 @@
 }
 
 .reasons__lasts .reasons__description-text {
-  padding-bottom: 30px;
-  margin-top: -6px;
+  padding-bottom: 26px;
+  margin-top: -4px;
   margin-bottom: -13px;
   border-bottom: 2px solid #d6d6d6;
 
@@ -517,7 +523,7 @@
   @media (min-width: @desktop-width) {
     border: none;
     width: 315px;
-    padding: 7px 0 0;
+    padding: 4px 0 0;
     line-height: 22px;
   }
 }
