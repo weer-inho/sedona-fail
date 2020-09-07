@@ -12,12 +12,17 @@
 @import url("blocks/page-footer.less");
 
 // Viewports
-@tablet-width: 812px;
+@tablet-width: 768px;
 @desktop-width: 1200px;
 @mobile-width-only: 767px;
 
-.page__body {
+body {
+  margin: 0;
+}
+
+.page {
   max-width: 1200px;
+  min-width: 320px;
   margin: auto;
   padding: 0;
 
@@ -31,6 +36,10 @@
   // временно
   background-color: #ffffff;
   box-shadow: 0 0 22px 0 rgba(50, 50, 50, 1);
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    min-height: 768px;
+  }
 }
 
 ul {

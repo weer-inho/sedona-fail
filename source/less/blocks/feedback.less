@@ -1,34 +1,46 @@
 .feedback {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 20px 20px 16px;
   text-align: center;
 
   border-bottom: 1px solid #ececec;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    padding: 20px 20px 0;
+  }
 }
 
 .feedback__title {
   font-size: 18px;
-  margin-bottom: 38px;
+  margin: 17px 0 30px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 44px auto 38px;
     font-size: 30px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 94px auto 35px;
     font-size: 30px;
   }
 }
 
 .feedback__description {
   font-weight: 400;
+  margin-bottom: 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-width: 485px;
-    margin: auto;
+    max-width: 445px;
+    margin: -5px auto 50px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 485px;
-    margin: auto;
+    max-width: 445px;
+    margin: 0 auto 50px;
   }
 }

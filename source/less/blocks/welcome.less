@@ -18,10 +18,10 @@
 .welcome__title {
   order: 1;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 27px;
   font-weight: 900;
 
-  margin-top: 32px;
+  margin: 29px 0 12px;
   padding: 0;
   max-width: 270px;
   text-align: center;
@@ -29,9 +29,12 @@
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     min-width: 520px;
     font-size: 21px;
+    margin: 44px 0 15px;
+    line-height: 28px;
   }
 
   @media (min-width: @desktop-width) {
+    margin: 55px 0 0;
     min-width: 520px;
     font-size: 21px;
   }
@@ -39,41 +42,53 @@
 
 .welcome__text {
   width: 100%;
-  height: 389px;
+  height: 395px;
   text-align: center;
   overflow: hidden;
   margin: auto;
 
-  background-image: url("../../img/back-mobile.jpg");
+  background-image:
+    url("../../img/icons/bg-intro-triangle-desktop.svg"),
+    url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center 335px, center;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     min-width: 100%;
     min-height: 518px;
 
-    background-image: url("../../img/back-desktop.jpg");
+    background-image:
+      url("../../img/icons/bg-intro-triangle-desktop.svg"),
+      url("../../img/back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 463px, center;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 100%;
     min-height: 518px;
 
-    background-image: url("../../img/back-desktop.jpg");
+    background-image:
+      url("../../img/icons/bg-intro-triangle-desktop.svg"),
+      url("../../img/back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 461px, center;
   }
 }
 
 .welcome__text-img {
   padding: 0;
   margin: 0;
-  padding-top: 90px;
+  padding-top: 93px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    padding-top: 70px;
+    padding-top: 78px;
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 77px;
     width: 461px;
     height: 350px;
   }
@@ -85,21 +100,23 @@
   line-height: 26px;
   font-weight: 400;
 
-  margin-top: 25px;
+  margin: 15px 0 20px;
   padding: 0;
   max-width: 285px;
-  height: 55px;
+  height: 65px;
   text-align: center;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     min-width: 520px;
     font-size: 14px;
     font-weight: 400;
+    margin: 13px 0 15px;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 520px;
     font-size: 14px;
     font-weight: 400;
+    margin: 30px 0 2px;
   }
 }

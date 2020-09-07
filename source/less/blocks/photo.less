@@ -1,5 +1,9 @@
 .photo {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin-bottom: -8px;
+  }
 }
 
 .photo__title {
@@ -8,37 +12,44 @@
   text-align: center;
   line-height: 26px;
 
-  margin: 0;
-  padding-top: 20px;
+  margin: 10px 0;
+  padding-top: 22px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 30px;
-    margin-top: 50px;
+    margin: 41px 0 15px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 30px;
-    margin-top: 50px;
+    margin: 79px auto 5px;
   }
 }
 
 .photo__description {
   font-weight: 400;
   text-align: center;
+  font-size: 14px;
   line-height: 24px;
 
-  max-width: 300px;
-  padding: 27px 0;
-  margin: 0 auto;
+  width: 290px;
+  margin: 0 0 0 17px;
+  padding: 18px 0 32px 0;
 
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-width: 460px;
+    width: 427px;
+    margin: 0 auto 45px;
+    font-size: 14px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 480px;
+    width: 427px;
+    min-height: 100px;
+    font-size: 14px;
+    margin: 0 auto 27px;
+    padding: 28px 0 0;
   }
 }
 
@@ -66,17 +77,19 @@
 .photo__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-
+  padding: 22px 20px 21px;
   border-bottom: 1px solid #e5e5e5;
   min-height: 415px;
   padding: 20px;
 
+  @media (max-width: @mobile-width-only) {
+    height: 371px;
+  }
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     border: none;
     align-items: flex-start;
-    padding: 0;
-    min-height: 347px;
+    padding: 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -84,6 +97,7 @@
     padding: 0;
     max-height: 267px;
     align-items: flex-start;
+    padding: 0 0 0;
   }
 }
 
@@ -93,17 +107,26 @@
   }
 }
 
-.photo__card .photo-card__img:first-child {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-height: 265px;
+.photo-card__img {
+  margin: auto;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 0;
   }
 }
 
-.photo__card .photo-card__img:not(:first-child) {
+.photo__card:first-child .photo-card__img {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-height: 235px;
+    max-height: 400px;
   }
 }
+
+.photo__card:not(:first-child) .photo-card__img {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    max-height: 268px;
+  }
+}
+
 
 .photo-card__container {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -111,7 +134,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    padding: 17px;
+    padding: 20px 20px 20px 20px;
     box-sizing: border-box;
     background-color: #f2f2f2;
   }
@@ -120,17 +143,44 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: -110px;
-    padding: 20px;
+    margin-top: -88px;
+    padding: 17px 20px 0;
     box-sizing: border-box;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
 
-.photo__card:not(:first-child) .photo-card__container {
+.photo__card:nth-child(2) .photo-card__container,
+.photo__card:nth-child(4) .photo-card__container {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    margin: 0;
+    padding: 20px 29px 8px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 17px 29px 0 20px;
+  }
+}
+
+.photo__card:nth-child(3) .photo-card__container {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 20px 36px 8px 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 17px 37px 0 20px;
+  }
+}
+
+.photo-card__wrapper {
+  margin: 0 0 8px 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 0 0 8px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 16px 0;
   }
 }
 
@@ -148,13 +198,14 @@
 }
 
 .photo-card__title {
-  margin-bottom: 0;
   order: 1;
+  font-size: 14px;
   line-height: 24px;
+  margin: 2px 0 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 14px;
-    margin: 0;
+    margin: -5px 0 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -174,6 +225,7 @@
   font-weight: 400;
   text-transform: none;
   color: #333333;
+  margin: 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     margin: 0;
@@ -182,17 +234,27 @@
   @media (min-width: @desktop-width) {
     margin: 0;
     color: #ffffff;
+    font-size: 14px;
   }
 }
 
 .photo-card__likes {
-  padding-left: 40px;
-  padding-bottom: 40px;
+  padding: 6px 0 0 37px;
   background-image: url("../../img/icons/icon-like.svg");
   background-repeat: no-repeat;
+  background-position: 0 4px;
+  display: inline-block;
+  height: 21px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    padding: 9px 0 0 40px;
+    background-position: 7px 8px;
+  }
 
   @media (min-width: @desktop-width) {
     background-image: url("../../img/icons/white-like-icon.svg");
+    background-position: 8px 11px;
+    padding: 12px 0 0 40px;
   }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
