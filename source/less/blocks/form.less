@@ -28,16 +28,22 @@
   }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: -ms-grid;
     display: grid;
     width: 708px;
     margin: auto;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 360px 310px 310px 310px;
     grid-template-rows: 360px 310px 310px 310px;
   }
 
   @media (min-width: @desktop-width) {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 360px 214px 215px 310px;
     grid-template-rows: 360px 214px 215px 310px;
   }
 }
@@ -71,11 +77,13 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     text-align: left;
+    margin: auto;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 22px;
     text-align: left;
+    margin: auto;
   }
 }
 
@@ -127,7 +135,7 @@
 }
 
 .name-form .main-form__fieldset-legend {
-  margin: 0 0 17px -5px;
+  margin: 0 auto 17px auto;
   padding: 22px 0 0 0;
   letter-spacing: 0.6px;
 
@@ -185,7 +193,7 @@ input[type="email"] {
   outline: none;
 
   @media (max-width: @mobile-width-only) {
-    padding: 18px 18px 11px 25px;
+    padding: 18px 5px 11px 25px;
   }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
@@ -251,12 +259,13 @@ input[type="email"] {
   position: relative;
   font-size: 18px;
   text-align: center;
+  margin: 0 auto 12px auto;
   padding-top: 20px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 21px;
     padding: 24px 0 0 0;
-    margin: 0 0 24px -1px;
+    margin: 0 auto 24px auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -550,7 +559,7 @@ input[type="email"] {
     text-align: center;
     line-height: 25px;
     font-size: 21px;
-    margin: 0 0 28px 5px;
+    margin: 0 auto 28px auto;
     padding: 16px 0 0 0;
   }
 
@@ -560,7 +569,7 @@ input[type="email"] {
     text-align: center;
     line-height: 25px;
     font-size: 21px;
-    margin: 0 0 29px -14px;
+    margin: 0 auto 29px auto;
     padding: 17px 0 0 0;
   }
 }
@@ -745,7 +754,7 @@ input[type="email"] {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     position: relative;
     font-size: 21px;
-    margin: 0 0 50px -1px;
+    margin: 0 auto 50px auto;
     padding: 18px 0 0 0;
     text-align: center;
   }
@@ -753,7 +762,7 @@ input[type="email"] {
   @media (min-width: @desktop-width) {
     position: relative;
     font-size: 21px;
-    margin: 0 0 56px 0;
+    margin: 0 auto 56px auto;
     padding: 22px 0 0 0;
     text-align: center;
   }
@@ -843,7 +852,7 @@ input[type="email"] {
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     width: 324px;
     margin: 5px 0 0 auto;
-    padding: 8px 12px 0 9px;
+    padding: 4px 19px 0 9px;
     font-size: 18px;
   }
 

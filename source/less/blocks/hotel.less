@@ -66,25 +66,29 @@
 }
 
 .hotel__find-button {
-  width: 100%;
+  display: inline-block;
+  width: 280px;
   height: 58px;
   border: none;
   box-sizing: border-box;
 
   font-family: "PT Sans", "Aria", sans-serif;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #81b3d2;
+  padding: 15px 0 0 0;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    max-width: 460px;
+    width: 460px;
     margin: 35px auto;
+    font-size: 21px;
   }
 
   @media (min-width: @desktop-width) {
-    max-width: 460px;
+    width: 460px;
     margin: 35px auto;
+    font-size: 21px;
   }
 }
