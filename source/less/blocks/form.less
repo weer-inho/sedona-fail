@@ -153,25 +153,7 @@
   }
 }
 
-// .name-form {
-//   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-//     grid-column-start: 2;
-//     grid-column-end: -1;
-//     grid-row-start: 1;
-//     grid-row-end: 2;
 
-//     justify-self: center;
-//   }
-
-//   @media (min-width: @desktop-width) {
-//     grid-column-start: 2;
-//     grid-column-end: -1;
-//     grid-row-start: 1;
-//     grid-row-end: 2;
-
-//     justify-self: center;
-//   }
-// }
 
 .name-form__label {
   padding: 22px 2px 0 0;
@@ -411,14 +393,16 @@ input[type="email"]:focus {
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 21px;
-    margin: 0 0 76px 0;
+    margin: 0 0 76px auto;
     padding: 17px 0 0 16px;
+    text-align: center;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
-    margin: 0 0 75px 0;
-    padding: 19px 0 0 157px;
+    margin: 0 0 75px auto;
+    padding: 19px 0 0 0px;
+    text-align: center;
   }
 }
 
@@ -586,7 +570,7 @@ input[type="email"]:focus {
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     position: relative;
-    max-width: 300px;
+    // max-width: 300px;
     text-align: center;
     line-height: 25px;
     font-size: 21px;
@@ -596,7 +580,7 @@ input[type="email"]:focus {
 
   @media (min-width: @desktop-width) {
     position: relative;
-    width: 300px;
+    // width: 300px;
     text-align: center;
     line-height: 25px;
     font-size: 21px;
@@ -813,16 +797,33 @@ input[type="email"]:focus {
     height: 2px;
     background-color: #dbdbdb;
   }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 280px;
+    height: 2px;
+    background-color: #dbdbdb;
+  }
 }
 
 .describe-emotion .main-form__fieldset-legend::before {
   bottom: 13px;
   left: -200px;
+
+  @media (min-width: @desktop-width) {
+    left: -355px;
+  }
 }
 
 .describe-emotion .main-form__fieldset-legend::after {
   bottom: 13px;
   right: -200px;
+
+  @media (min-width: @desktop-width) {
+    right: -355px;
+  }
 }
 
 .describe-emotion {
@@ -868,7 +869,7 @@ input[type="email"]:focus {
     width: 960px;
     padding: 22px 22px 29px;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 

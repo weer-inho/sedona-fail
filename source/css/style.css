@@ -2264,15 +2264,17 @@ input[type="email"]:focus {
 @media (min-width: 768px) and (max-width: 1200px) {
   .impression-form .main-form__fieldset-legend {
     font-size: 21px;
-    margin: 0 0 76px 0;
+    margin: 0 0 76px auto;
     padding: 17px 0 0 16px;
+    text-align: center;
   }
 }
 @media (min-width: 1200px) {
   .impression-form .main-form__fieldset-legend {
     font-size: 21px;
-    margin: 0 0 75px 0;
-    padding: 19px 0 0 157px;
+    margin: 0 0 75px auto;
+    padding: 19px 0 0 0px;
+    text-align: center;
   }
 }
 .impression-form__block:not(:last-child) {
@@ -2441,7 +2443,6 @@ input[type="email"]:focus {
 @media (min-width: 768px) and (max-width: 1200px) {
   .place-form .main-form__fieldset-legend {
     position: relative;
-    max-width: 300px;
     text-align: center;
     line-height: 25px;
     font-size: 21px;
@@ -2452,7 +2453,6 @@ input[type="email"]:focus {
 @media (min-width: 1200px) {
   .place-form .main-form__fieldset-legend {
     position: relative;
-    width: 300px;
     text-align: center;
     line-height: 25px;
     font-size: 21px;
@@ -2672,13 +2672,34 @@ input[type="email"]:focus {
     background-color: #dbdbdb;
   }
 }
+@media (min-width: 1200px) {
+  .describe-emotion .main-form__fieldset-legend::before,
+  .describe-emotion .main-form__fieldset-legend::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 280px;
+    height: 2px;
+    background-color: #dbdbdb;
+  }
+}
 .describe-emotion .main-form__fieldset-legend::before {
   bottom: 13px;
   left: -200px;
 }
+@media (min-width: 1200px) {
+  .describe-emotion .main-form__fieldset-legend::before {
+    left: -355px;
+  }
+}
 .describe-emotion .main-form__fieldset-legend::after {
   bottom: 13px;
   right: -200px;
+}
+@media (min-width: 1200px) {
+  .describe-emotion .main-form__fieldset-legend::after {
+    right: -355px;
+  }
 }
 .describe-emotion {
   text-align: center;
@@ -2726,7 +2747,7 @@ input[type="email"]:focus {
     width: 960px;
     padding: 22px 22px 29px;
     font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 21px;
+    font-size: 18px;
   }
 }
 .describe-emotion__text:hover {
@@ -2843,7 +2864,7 @@ input[type="email"]:focus {
 }
 @media (min-width: 1200px) {
   .feedback__description {
-    max-width: 445px;
+    max-width: 443px;
     margin: 0 auto 50px;
   }
 }
@@ -3222,6 +3243,7 @@ input[type="email"]:focus {
 }
 body {
   margin: 0;
+  background-color: #f2f2f2;
 }
 .page {
   max-width: 1200px;
