@@ -1,0 +1,116 @@
+.describe-emotion .main-form__fieldset-legend {
+  font-size: 18px;
+  margin: 0 auto 12px auto;
+  padding: 21px 0 0 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    position: relative;
+    font-size: 21px;
+    margin: 0 auto 50px auto;
+    padding: 18px 0 0 0;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    font-size: 21px;
+    margin: 0 auto 56px auto;
+    padding: 22px 0 0 0;
+    text-align: center;
+  }
+}
+
+.describe-emotion .main-form__fieldset-legend::before,
+.describe-emotion .main-form__fieldset-legend::after {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 123px;
+    height: 2px;
+    background-color: #dbdbdb;
+  }
+
+  @media (min-width: @desktop-width) {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 280px;
+    height: 2px;
+    background-color: #dbdbdb;
+  }
+}
+
+.describe-emotion .main-form__fieldset-legend::before {
+  bottom: 13px;
+  left: -200px;
+
+  @media (min-width: @desktop-width) {
+    left: -355px;
+  }
+}
+
+.describe-emotion .main-form__fieldset-legend::after {
+  bottom: 13px;
+  right: -200px;
+
+  @media (min-width: @desktop-width) {
+    right: -355px;
+  }
+}
+
+.describe-emotion {
+  text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+}
+
+.describe-emotion__text {
+  border: none;
+  outline: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 14px 23px 29px 17px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  width: 275px;
+  height: 160px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 648px;
+    margin: 7px 0 0 0;
+    padding: 18px 22px 29px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 960px;
+    padding: 22px 22px 29px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+  }
+}
+
+.describe-emotion__text:hover {
+  background-color: #e5e5e5;
+}
+
+.describe-emotion__text:focus {
+  background-color: #ffffff;
+  border: 4px solid #e5e5e5;
+}

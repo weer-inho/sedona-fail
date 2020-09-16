@@ -1,0 +1,122 @@
+.main-form {
+  @media (max-width: @mobile-width-only) {
+    width: 300px;
+    margin: auto;
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: grid;
+    width: 708px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 360px 310px 310px 310px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 360px 214px 215px 310px;
+  }
+}
+
+.main-form__block {
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1px solid #efefef;
+  margin: auto;
+  padding-bottom: 30px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 0;
+    padding-top: 0;
+    border: none;
+  }
+}
+
+.main-form__fieldset-legend {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 17px 0 0 0;
+  margin: 0 0 12px 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    text-align: left;
+    margin: auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 22px;
+    text-align: left;
+    margin: auto;
+  }
+}
+
+
+.main-form__submit-button {
+  position: relative;
+  width: 280px;
+  height: 58px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #81b3d2;
+  margin: 13px 0 0 9px;
+  border: none;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 324px;
+    margin: 5px 0 0 auto;
+    padding: 4px 19px 0 9px;
+    font-size: 21px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 479px;
+    margin: 10px 0 0 auto;
+  }
+}
+
+.main-form__submit-button:hover {
+  background-color: #669ec0;
+}
+
+.main-form__submit-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+.main-form__submit-button::after {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    position: absolute;
+    content: "* — обязательные поля";
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    top: 39%;
+    right: -100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    content: "* — обязательные поля";
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333333;
+    top: 37%;
+    right: -100%;
+  }
+}

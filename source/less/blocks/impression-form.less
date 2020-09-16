@@ -1,0 +1,161 @@
+.impression-form {
+  padding: 5px 11px 25px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 305px;
+    margin: 0 0 0 13px;
+    padding: 0 0 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 429px;
+    margin: 0 0 18px 33px;
+    padding: 1px 0 30px 0;
+  }
+}
+
+.impression-form .main-form__fieldset-legend {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  margin: 0 auto 33px auto;
+  padding: 20px 0 0;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 21px;
+    margin: 0 0 76px auto;
+    padding: 17px 0 0 16px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 21px;
+    margin: 0 0 75px auto;
+    padding: 19px 0 0 0;
+    text-align: center;
+  }
+}
+
+.impression-form__block:not(:last-child) {
+  margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    margin: 0 0 55px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 0 56px 0;
+  }
+}
+
+.impression-form__block:last-child {
+  margin-bottom: 15px;
+}
+
+.impression-form__negative-block {
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.impression-form__label {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  padding-left: 78px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 18px;
+    padding-left: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    padding-left: 70px;
+    margin: 0;
+  }
+}
+
+.impression-form__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.impression-form__label:active::before,
+.impression-form__label:focus::before {
+  background-color: #d5d5d5;
+}
+
+.impression-form__input:checked:active + .impression-form__label::after {
+  background-color: #a5a5a5;
+}
+
+.npsb-form {
+  display: none;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}
+
+.impression-form__label::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: -1px;
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    top: -16px;
+    left: -6px;
+    width: 56px;
+    height: 56px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -16px;
+    left: -6px;
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.impression-form__input:checked + .impression-form__label::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 16px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    top: 2px;
+    left: 13px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 1px;
+    left: 12px;
+    width: 22px;
+    height: 22px;
+  }
+}
