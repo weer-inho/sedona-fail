@@ -1412,16 +1412,13 @@
 }
 .presentation__button-block {
   position: absolute;
-  top: 78%;
+  top: 69%;
   left: 50%;
   width: 280px;
-  height: 66px;
+  height: 111px;
   display: flex;
-  justify-content: space-between;
   margin-left: -140px;
-  padding: 23px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .presentation__button-block {
@@ -1433,6 +1430,11 @@
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
     margin-left: -324px;
+  }
+}
+@media (max-width: 767px) {
+  .presentation__button-block {
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 1200px) {
@@ -1448,21 +1450,23 @@
   }
 }
 .presentation__replay-button {
-  position: absolute;
   width: 20px;
-  height: 20px;
-  top: 29%;
-  left: 20px;
+  height: 66px;
   border: none;
 }
 .presentation__replay-button path {
   fill: #5c6870;
 }
+@media (max-width: 767px) {
+  .presentation__replay-button {
+    padding: 0 143px 0 25px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1200px) {
   .presentation__replay-button {
-    position: absolute;
-    top: 37%;
-    left: 30px;
+    order: -1;
+    height: 100%;
+    margin: 0 0 0 28px;
     background-color: transparent;
   }
   .presentation__replay-button path {
@@ -1471,9 +1475,9 @@
 }
 @media (min-width: 1200px) {
   .presentation__replay-button {
-    position: absolute;
-    top: 36%;
-    left: 28px;
+    order: -1;
+    margin: 0 0 0 28px;
+    height: 100%;
     background-color: transparent;
   }
   .presentation__replay-button path {
@@ -1541,26 +1545,29 @@
   }
 }
 .presentation__block {
-  position: absolute;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.8);
   width: 235px;
   height: 3px;
-  top: -37%;
-  left: 22px;
+}
+@media (max-width: 767px) {
+  .presentation__block {
+    width: 280px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .presentation__block {
-    top: 49%;
     width: 389px;
-    left: 94px;
+    margin: auto 35px auto 46px;
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
 @media (min-width: 1200px) {
   .presentation__block {
-    top: 49%;
     width: 540px;
-    left: 92px;
+    margin: auto 35px auto 46px;
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
@@ -1571,23 +1578,18 @@
   width: 10px;
   border-radius: 50%;
   background-color: #ffffff;
-  top: -4px;
-  left: 36px;
+  top: 19px;
+  left: 57px;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .presentation__block::after {
-    left: 113px;
+    top: -3px;
+    left: 112px;
   }
 }
 @media (min-width: 1200px) {
   .presentation__block::after {
-    position: absolute;
-    content: "";
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    top: -5px;
+    top: -3px;
     left: 112px;
   }
 }
@@ -1595,31 +1597,38 @@
   .presentation__block::before {
     position: absolute;
     content: "";
-    height: 45px;
-    width: 280px;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: -22px;
-    left: -21px;
+    height: 3px;
+    width: 235px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 49%;
+    left: 23px;
   }
 }
 .presentation__button-wrapper {
-  position: absolute;
-  top: 31%;
-  right: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 83px;
+  height: 66px;
+  padding: 0 29px 0 0;
+}
+@media (max-width: 767px) {
+  .presentation__button-wrapper {
+    background-color: #efefef;
+  }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .presentation__button-wrapper {
-    top: 38%;
-    right: 46px;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
 @media (min-width: 1200px) {
   .presentation__button-wrapper {
-    top: 37%;
-    right: 49px;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
 .presentation__subtitles-button {
@@ -3256,7 +3265,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   background-color: #ffffff;
-  box-shadow: 0 0 22px 0 #323232;
+  box-shadow: 0 0 10px 0 #323232;
 }
 @media (min-width: 768px) and (max-width: 1200px) {
   .page {

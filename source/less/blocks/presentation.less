@@ -74,17 +74,18 @@
 
 .presentation__button-block {
   position: absolute;
-  top: 78%;
+  top: 69%;
   left: 50%;
   width: 280px;
-  height: 66px;
+  height: 111px;
   display: flex;
-  justify-content: space-between;
+
+  // justify-content: space-between;
   margin-left: -140px;
-  padding: 23px;
+  // padding: 23px;
   box-sizing: border-box;
 
-  background-color: #f2f2f2;
+  // background-color: #f2f2f2;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     position: absolute;
@@ -95,6 +96,10 @@
     display: flex;
     background-color: rgba(0, 0, 0, 0.6);
     margin-left: -324px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
@@ -110,21 +115,23 @@
 }
 
 .presentation__replay-button {
-  position: absolute;
+  // position: absolute;
   width: 20px;
-  height: 20px;
-  top: 29%;
-  left: 20px;
+  height: 66px;
   border: none;
 
   & path {
     fill: #5c6870;
   }
 
+  @media (max-width: @mobile-width-only) {
+    padding: 0 143px 0 25px;
+  }
+
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    position: absolute;
-    top: 37%;
-    left: 30px;
+    order: -1;
+    height: 100%;
+    margin: 0 0 0 28px;
     background-color: transparent;
 
     & path {
@@ -133,9 +140,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 36%;
-    left: 28px;
+    order: -1;
+    margin: 0 0 0 28px;
+    height: 100%;
     background-color: transparent;
 
     & path {
@@ -202,24 +209,26 @@
 }
 
 .presentation__block {
-  position: absolute;
+  position: relative;
   background-color: rgba(255, 255, 255, 0.8);
   width: 235px;
   height: 3px;
-  top: -37%;
-  left: 22px;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    top: 49%;
     width: 389px;
-    left: 94px;
+    margin: auto 35px auto 46px;
     background-color: rgba(255, 255, 255, 0.2);
   }
 
   @media (min-width: @desktop-width) {
-    top: 49%;
     width: 540px;
-    left: 92px;
+    margin: auto 35px auto 46px;
     background-color: rgba(255, 255, 255, 0.2);
   }
 }
@@ -231,21 +240,16 @@
   width: 10px;
   border-radius: 50%;
   background-color: #ffffff;
-  top: -4px;
-  left: 36px;
+  top: 19px;
+  left: 57px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    left: 113px;
+    top: -3px;
+    left: 112px;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    content: "";
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    top: -5px;
+    top: -3px;
     left: 112px;
   }
 }
@@ -254,30 +258,37 @@
   @media (max-width: @mobile-width-only) {
     position: absolute;
     content: "";
-    height: 45px;
-    width: 280px;
-    background-color: rgba(0, 0, 0, 0.6);
-    top: -22px;
-    left: -21px;
+    height: 3px;
+    width: 235px;
+    background-color: rgba(255, 255, 255, 0.2);
+    top: 49%;
+    left: 23px;
   }
 }
 
 .presentation__button-wrapper {
-  position: absolute;
-  top: 31%;
-  right: 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 83px;
+  height: 66px;
+  padding: 0 29px 0 0;
+
+
+  @media (max-width: @mobile-width-only) {
+    background-color: #efefef;
+  }
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    top: 38%;
-    right: 46px;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 
   @media (min-width: @desktop-width) {
-    top: 37%;
-    right: 49px;
+    display: flex;
+    align-items: center;
+    height: 100%;
   }
 }
 
