@@ -7,19 +7,24 @@
   background-color: #ffffff;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    display: flex;
-    max-width: 800px;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 195px 256px 195px;
+    max-width: 646px;
     max-height: 120px;
     margin: auto;
-    padding: 28px 66px 0 56px;
+    padding: 28px 0 0 0;
     box-sizing: border-box;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    max-width: 1000px;
+    // display: flex;
+    display: grid;
+    grid-template-columns: 280px 400px 280px;
+    max-width: 960px;
     max-height: 120px;
-    padding: 22px 120px 0 120px;
+    margin: auto;
+    padding: 22px 0 0 0;
     box-sizing: border-box;
   }
 }
@@ -30,12 +35,18 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     font-size: 21px;
-    margin: 14px 0 0 5px;
+    margin: 14px 0 0 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 21px;
     margin: 21px 0 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: left;
   }
 }
 
@@ -48,12 +59,16 @@
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     min-width: 150px;
-    margin: 0 104px 0 111px;
+    margin: 1px auto 0 auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   @media (min-width: @desktop-width) {
     min-width: 150px;
-    margin: 9px 267px auto 267px;
+    margin: 9px auto 0 auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
 
@@ -89,10 +104,15 @@
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
     margin: 0;
     padding: 10px 0 0;
+    grid-column-start: 3;
+    grid-column-end: -1;
   }
 
   @media (min-width: @desktop-width) {
+    width: 100%;
     margin: 0;
+    grid-column-start: 3;
+    grid-column-end: -1;
   }
 }
 
@@ -102,12 +122,12 @@
   top: -2px;
 
   @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    right: -7px;
+    right: -25px;
     top: -2px;
   }
 
   @media (min-width: @desktop-width) {
-    right: -38px;
+    right: -20px;
     top: 14px;
   }
 }
@@ -143,4 +163,17 @@
   color: #000000;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    width: 120px;
+    margin-left: 51px;
+    justify-content: start;
+  }
+
+
+  @media (min-width: @desktop-width) {
+    width: 120px;
+    margin-left: 140px;
+    justify-content: start;
+  }
 }
