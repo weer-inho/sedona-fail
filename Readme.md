@@ -1,4 +1,5 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+https://weer-inho.github.io/sedona-fail/
 
 * Студент: [Руслан Амиров](https://up.htmlacademy.ru/adaptive/20/user/1376695).
 * Наставник: [Анна Русяева](https://htmlacademy.ru/profile/vanillawulf).
